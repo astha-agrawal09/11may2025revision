@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+
+        <script>
+           
+           // Class 
+           
+           //1. class defination
+                //PascalCase
+           class MyNumbers{
+            //1.property == variable          
+               a; //declaration
+               b;//declaration
+
+            //2.constructor(special function)(used to initialize the property)
+
+            constructor(){
+                //object.property
+                this.a =10; //this is a class internal object(CIO)
+                this.b =20;//in = associativity of operator right value assign to left
+            }
+
+            //3.method == function
+             addNumbers(){
+                 console.log(this.a+this.b);
+             }
+
+
+           }
+
+           //class instantiation/create class object
+           //let ceo = new classname();
+        
+           let ceo1 = new MyNumbers();
+            
+           //member selection operator
+           //1.ceo.property
+           //2.ceo.method();
+           ceo1.addNumbers();
+        </script>
+
+        <script>
+           // JS Loop statement
+           //1.(for) loop statement
+           //syntax
+           /*
+            for(initialization; condition; incr/decr){
+                code block to be executed
+            }
+           */
+            for(var a=0; a < 10; a++){
+                console.log("for loop incr");
+            }
+            for(var i=20; i>10; i--){
+                console.log("for loop decr")
+            }
+            
+            let student ={
+                //p:v or k:v P=property, v=value ,k=key
+                name:"Astha",
+                "surname":"Agrawal",
+                'age':20,
+                address:"neemuch",
+
+                //method()
+            }
+            //2.(for in ) loop statement
+            //syntax
+            /*
+              for(key in object){
+                code  block to be executed
+                }
+            */
+           for (key in student){
+            console.log(key); //print key
+            //objectName[expression]
+             console.log(student[key]); //print value
+           
+           }
+
+
+        </script>
+        
+    </body>
+</html>
