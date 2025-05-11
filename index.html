@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+          
+        <script>
+            //variables
+            //variables have 4 approaches 
+            /*
+            1.var
+            2.let (it was introduced in ES6 in the year 2015)
+            3.const (it was also introduced in ES6 in the year 2015)
+            4.automatic
+            
+            */
+           var a = 10; //if a line have semi-colon at the end that line will known as statement
+           let b = 2;
+           const c= a+b;
+           console.log(c);
+            // JS hoisting
+            // (in hoisting we can initialize the value first and then after that we can declare variable)
+            //the var variable is the only approach for hoisting
+            fname="astha"; //initialization
+
+            var fname; //declaration
+            console.log(fname);
+
+            // Array
+            //it can store multiple information at a time in square brackets[]
+              
+            var myColours=["black","white","yellow","red","green",]
+            //change array element
+            myColours[2] = "purple";
+            console.log(myColours);
+            console.log(myColours.length);
+            console.log(myColours[0]);//first element
+            console.log(myColours.length-1);//total no of elements
+            console.log(myColours[4]); //last element
+        </script>
+    </body>
+</html>

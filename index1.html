@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+            //function 
+            //1. defination(one time process)
+
+            function addTwoNumbers(a,b,c){
+             x = a+b+c;
+            }
+
+
+            //2.calling/invocation(many time process)
+           
+            addTwoNumbers(10,20,30);
+            console.log(x);
+
+            //JS Object{}
+
+            const myIntro={
+
+            
+            //1.P:V
+
+             name:"Astha",//(string)
+             "surname":"Agrawal",//double codes (string)
+             'age':20,//single code (number) 
+             address:"neemuch",//(string)
+             n1:20,
+             n2:20,
+            //2.Method()
+
+            multiplyNumbers: function(){
+                console.log(this.n1*this.n2);
+            }
+            
+            }      
+
+            myIntro.multiplyNumbers(); //object.method()
+
+            console.log(myIntro);
+            console.log(myIntro.name);
+            console.log(myIntro.surname);
+            console.log(myIntro.age);
+            console.log(myIntro.address);
+
+        </script>
+    </body>
+</html>
